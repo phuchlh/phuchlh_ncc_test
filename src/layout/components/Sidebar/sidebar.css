@@ -1,5 +1,3 @@
-/* App.css */
-
 html,
 body {
   height: 100%;
@@ -12,11 +10,11 @@ body {
 }
 
 .sidebar {
-  width: 200px;
+  height: 100vh;
+  width: 150px;
   background-color: #333;
   color: white;
   padding: 20px;
-  height: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -35,19 +33,12 @@ body {
   padding-bottom: 5px;
 }
 
+.sidebar li:hover {
+  background-color: #5c5c5c;
+  color: #fff;
+}
+
 .content {
   flex-grow: 1;
   padding: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  max-width: 1140px;
-  width: 100%;
-}
-
-.card-container {
-  display: grid;
-  gap: 40px;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
