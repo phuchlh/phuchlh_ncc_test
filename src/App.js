@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-function App() {
+const Sidebar = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="sidebar">
+      <ul>
+        <li>Home</li>
+        <li>Services</li>
+        <li>News</li>
+        <li>Blog</li>
+        <li>Contact</li>
+      </ul>
     </div>
   );
-}
+};
+
+const App = () => {
+  return (
+    <div className="app">
+      <Sidebar />
+      <div className="content">
+        {/* Your main content goes here */}
+        <h1>Welcome to My Website</h1>
+      </div>
+    </div>
+  );
+};
 
 export default App;
